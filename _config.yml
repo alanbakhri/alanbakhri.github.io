@@ -1,0 +1,24 @@
+title: Alan Bakhri
+author:
+  name: Alan Bakhri
+  github: alanbakhri
+  twitter: alanbakhry
+  youtube: alanbakhri
+  avatar: avatar.png
+
+brand:
+  name: AB
+  path: /images
+
+description: My personal website and info about me
+
+url: ""
+baseurl: ""
+
+markdown: kramdown
+highlighter: pygments
+
+gems:
+  - jekyll-feed
+
+gem:

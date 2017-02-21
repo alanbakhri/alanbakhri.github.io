@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="alternate" type="application/rss+xml" title="Alan Bakhri RSS" href="{{ site.url }}/feed.xml">
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <section class="brand">
+          <div class="box">
+            <h1><a href="{{ site.url }}/"><img src="{{ site.brand.path }}/{{ site.author.avatar }}" alt="">{{ site.brand.name }}</a></h1>
+          </div>
+        </section>
+        <nav class="nav nav__header">
+          <ul class="list">
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/blog.html">Blog</a></li>
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/portfolio.html">Work</a></li>
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/about.html">About</a></li>
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <nav class="navigation ">
+          <ul class="list">
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/blog.html">Blog</a></li>
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/portfolio.html">Work</a></li>
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/about.html">About</a></li>
+            <li class="list__item"><a class="list--link" href="{{ site.url }}/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="list list--social">
+          <li><a href="https://github.com/alanbakhri">{{ site.author.github }}</a></li>
+          <li><a href="https://twitter.com/alanbakhry">{{ site.author.twitter }}</a></li>
+          <li><a href="https://facebook.com/alanbakhri">{{ site.author.facebook }}</a></li>
+        </ul>
+        <section class="copyrigth">
+          <p>&copy; {{ 'now' | date: "%Y" }} Created by Alan Bakhri</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

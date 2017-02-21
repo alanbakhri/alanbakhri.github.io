@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="showcase">
+  <h1>Blog page</h1>
+</section>
+{% for post in site.posts %}
+  <article class="post">
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <span>post by {{ post.author }}</span>
+  </article>
+{% endfor %}
+{{ content }}
