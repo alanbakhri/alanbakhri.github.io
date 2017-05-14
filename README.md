@@ -1,1 +1,1 @@
-link to [My personal info](https://alanbakhri.github.io)
+See more about me [visit site](https://alanbakhri.github.io)
