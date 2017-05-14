@@ -1,24 +1,21 @@
+# site settings
 title: Alan Bakhri
-author:
-  name: Alan Bakhri
-  github: alanbakhri
-  twitter: alanbakhry
-  youtube: alanbakhri
-  avatar: avatar.png
+author: Alan Bakhri
+description: My personal website and info about me
+
+github: alanbakhri
+twitter: alanbakhry
 
 brand:
   name: Portfolio
   path: /images
 
-description: My personal website and info about me
-
 url: ""
 baseurl: ""
 
+# build settings
 markdown: kramdown
 highlighter: pygments
 
 gems:
   - jekyll-feed
-
-gem:
