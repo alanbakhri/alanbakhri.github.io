@@ -1,54 +1,50 @@
-<!DOCTYPE html>
-<html>
-  <head lang="en">
+<!doctype html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta name="google-site-verification" content="60Gv11HvhGiKCxUAmnpxkzpzgZTUUKTwCV1dMshka8o">    
+    <meta name="google-site-verification" content="60Gv11HvhGiKCxUAmnpxkzpzgZTUUKTwCV1dMshka8o">
     <link rel="alternate" type="application/rss+xml" title="Alan Bakhri RSS" href="{{ site.url }}/feed.xml">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }} - {{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-  </head>
-  <body>
-    <header id="header">
-      <div class="container">
-        <section class="brand">
-          <div class="box">
-            <h1><a href="{{ site.url }}/"><img src="{{ site.brand.path }}/{{ site.author.avatar }}" alt=""> {{ site.brand.name }}</a></h1>
-          </div>
-        </section>
-        <nav class="nav nav__header">
-          <ul class="list">
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/blog.html">Blog</a></li>
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/portfolio.html">Work</a></li>
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/about.html">About</a></li>
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main id="main">
-      <div class="container">
-        {{ content }}
-      </div>
-    </main>
-    <footer id="footer">
-      <div class="container">
-        <nav class="navigation ">
-          <ul class="list">
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/blog.html">Blog</a></li>
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/portfolio.html">Work</a></li>
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/about.html">About</a></li>
-            <li class="list__item"><a class="list--link" href="{{ site.url }}/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <ul class="list list--social">
-          <li><a href="https://github.com/alanbakhri">{{ site.github }}</a></li>
-          <li><a href="https://twitter.com/alanbakhry">{{ site.twitter }}</a></li>
-        </ul>
-        <section class="copyrigth">
-          <p>&copy; {{ 'now' | date: "%Y" }} Created by Alan Bakhri</p>
-        </section>
-      </div>
-    </footer>
-  </body>
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/reset.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
+</head>
+
+<body class="Site">
+
+    <div class="wrapper">
+
+        <div class="nav-wrapper" style="opacity: 1; margin-top: 0;">
+            <nav class="nav">
+                <h1 class="nav-logo"><a href="#">Alan-B</a></h1>
+                <ul>
+                    <!-- <li class="nav-menu-item"><a href="" class="nav-menu-link">Blog</a></li> -->
+                    <li class="nav-menu-item"><a href="" class="nav-menu-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="content">
+
+            {{ content }}
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <ul class="list list--social">
+                    <li><a href="https://github.com/alanbakhri"><img src="{{ site.github.logo_icon }}" alt=""></a></li>
+                    <li><a href="https://twitter.com/alanbakhry"><img src="{{ site.twitter.logo_icon }}" alt=""></a></li>
+                </ul>
+                <section class="copyrigth">
+                    <p>&copy; {{ 'now' | date: "%Y" }} Alan Bakhri.</p>
+                </section>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
 </html>

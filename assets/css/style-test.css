@@ -1,0 +1,126 @@
+/* ---- My own CSS Style ---- */
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  background-color: #fcfcfc;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  font-weight: normal;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.col-7, .col-5 {
+  max-width: 100%;
+}
+
+header {
+  background-color: #fcfcfc;
+}
+
+nav, header, main, footer {
+  width: 100%;
+}
+
+nav, main, footer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 1024px;
+  max-width: 100%;
+}
+
+nav {
+  align-items: center;
+  z-index: 9;
+  min-height: 6.2rem;
+}
+
+header, footer {
+  line-height: 4em;
+}
+
+main {
+  padding-top: 10rem;
+}
+
+nav img {
+    max-width: 100%;
+    height: auto;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.about {
+  align-items: center;
+}
+
+.m-bot-l {
+  margin-bottom: 3rem;
+}
+
+.m-bot-xl {
+  margin-bottom: 12rem;
+}
+
+.t-title {
+  font-weight: 800;
+}
+
+.f-large {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.footer {
+  /*align-self: flex-end;*/
+}
