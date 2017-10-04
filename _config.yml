@@ -3,12 +3,20 @@ title: Alan Bakhri
 author: Alan Bakhri
 description: My personal website and info about me
 
-github: alanbakhri
-twitter: alanbakhry
+github:
+  name: alanbakhri
+  logo_icon: /assets/img/github-logo.png
+
+twitter:
+  name: alanbakhry
+  logo_icon: /assets/img/twitter-logo.png
 
 brand:
   name: Portfolio
   path: /images
+
+img:
+  path: /assets/img
 
 url: ""
 baseurl: ""
